@@ -1,1 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@use '../abstracts' as *;
+
+.nft-card {
+    h2 {
+        color: $white;
+    }
+
+    p {
+        color: $darkblue-lines;
+    }
+
+    .owner {
+        span {
+            color: $white;
+        }
+    }
+}
+
+.nft-price {
+    p {
+        color: $cyan;
+    }
+}

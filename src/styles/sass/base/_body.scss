@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: $darkblue-body-BG;
+    font-size: 1.125rem;
+    font-family: 'Outfit', sans-serif;
+}
