@@ -3,21 +3,37 @@
 .nft-card {
     h2 {
         color: $white;
+        @include margins(1rem, 0, 1rem, 0);
     }
 
     p {
-        color: $darkblue-lines;
+        color: $soft-blue;
+    }
+
+    .nft-price-description {
+        @include margins;
+
+        .nft-price {
+            p {
+                color: $cyan;
+                @extend %margin-left;
+            }
+        }
+
+        .day-left {
+            p {
+                @extend %margin-left;
+            }
+        }
     }
 
     .owner {
         span {
             color: $white;
         }
-    }
-}
 
-.nft-price {
-    p {
-        color: $cyan;
+        p {
+            @extend %margin-left;
+        }
     }
 }

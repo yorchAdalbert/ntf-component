@@ -1,19 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.nft-card .nft-price-description .nft-price p, .nft-card .nft-price-description .day-left p, .nft-card .owner p {
+  margin-left: 0.5rem;
+}
+
 .nft-card h2 {
   color: hsl(0deg, 0%, 100%);
+  margin: 1rem 0 1rem 0;
 }
 .nft-card p {
-  color: hsl(215deg, 32%, 27%);
+  color: hsl(215deg, 51%, 70%);
+}
+.nft-card .nft-price-description {
+  margin: 1rem 0 0 0;
+}
+.nft-card .nft-price-description .nft-price p {
+  color: hsl(178deg, 100%, 50%);
 }
 .nft-card .owner span {
   color: hsl(0deg, 0%, 100%);
 }
-
-.nft-price p {
-  color: hsl(178deg, 100%, 50%);
-}
-
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: hsl(217deg, 54%, 11%);
   font-size: 1.125rem;
   font-family: "Outfit", sans-serif;

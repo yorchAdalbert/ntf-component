@@ -1,5 +1,48 @@
 @use '../abstracts' as *;
 
 .nft-card {
+    width: 21.5rem;
+    padding: 1.3125rem;
     background-color: $darkblue-card-BG;
+    @include rounded-corners(1rem);
+
+    .nft-image {
+        @include sizing-image(19rem, 19rem);
+        @include rounded-corners(.5rem);
+        overflow: hidden;
+
+        img {
+            max-height: 100%;
+            width: auto;
+            display: block;
+        }
+    }
+
+    .nft-price-description {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $darkblue-lines;
+        padding-bottom: 1.5rem;
+
+        .nft-price {
+            display: flex;
+        }
+
+        .day-left {
+            display: flex;
+        }
+
+    }
+
+    .owner {
+        display: flex;
+        align-items: center;
+        @include margins;
+
+        img {
+            @include sizing-image(2.2rem, 2.2rem);
+            @include rounded-corners(50%);
+            border: 1px solid $white;
+        }
+    }
 }
