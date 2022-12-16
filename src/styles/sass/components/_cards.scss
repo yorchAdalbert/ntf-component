@@ -1,20 +1,22 @@
 @use '../abstracts' as *;
 
 .nft-card {
-    width: 21.5rem;
-    padding: 1.3125rem;
+    width: 18rem;
     background-color: $darkblue-card-BG;
     @include rounded-corners(1rem);
+    padding: 1rem;
 
     .nft-image {
-        @include sizing-image(19rem, 19rem);
+        @include sizing-image(16rem, 16rem);
         @include rounded-corners(.5rem);
         overflow: hidden;
+        margin: auto;
 
         img {
             max-height: 100%;
             width: auto;
             display: block;
+
         }
     }
 

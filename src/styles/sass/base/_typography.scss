@@ -1,9 +1,13 @@
 @use '../abstracts' as *;
 
 .nft-card {
-    h2 {
+    h3 {
         color: $white;
         @include margins(1rem, 0, 1rem, 0);
+
+        &:hover {
+            color: $cyan;
+        }
     }
 
     p {
@@ -30,6 +34,10 @@
     .owner {
         span {
             color: $white;
+
+            &:hover {
+                color: $cyan;
+            }
         }
 
         p {

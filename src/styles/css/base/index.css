@@ -3,9 +3,12 @@
   margin-left: 0.5rem;
 }
 
-.nft-card h2 {
+.nft-card h3 {
   color: hsl(0deg, 0%, 100%);
   margin: 1rem 0 1rem 0;
+}
+.nft-card h3:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 .nft-card p {
   color: hsl(215deg, 51%, 70%);
@@ -19,13 +22,15 @@
 .nft-card .owner span {
   color: hsl(0deg, 0%, 100%);
 }
+.nft-card .owner span:hover {
+  color: hsl(178deg, 100%, 50%);
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: hsl(217deg, 54%, 11%);
-  font-size: 1.125rem;
   font-family: "Outfit", sans-serif;
 }
 
